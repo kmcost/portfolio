@@ -5,8 +5,6 @@
   --accent: #2563EB;
   --border: rgba(43, 43, 43, 0.12);
   --card-hover-bg: rgba(43, 43, 43, 0.04);
-  --brand-blue: #2563EB;
-  --brand-k: #FFFFFF;
 }
 
 :root[data-theme="dark"] {
@@ -103,14 +101,16 @@ button {
   width: 32px;
   height: 32px;
   border-radius: 9px;
-  background: var(--brand-blue);
-  color: var(--brand-k);
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.logo-mark svg {
+  width: 17px;
+  height: 17px;
 }
 
 .header-right {
