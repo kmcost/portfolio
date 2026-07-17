@@ -17,7 +17,10 @@
 
 <header class="site-header">
   <a href="#top" class="logo" aria-label="Back to top">
-    <span class="logo-mark" aria-hidden="true">k</span>
+    <span class="logo-mark" aria-hidden="true">
+      <img class="logo-light" src="assets/kayleecostello_logo_lightmode.svg" alt="">
+      <img class="logo-dark" src="assets/kayleecostello_logo_darkmode.svg" alt="">
+    </span>
   </a>
 
   <div class="header-right">
@@ -39,7 +42,7 @@
 
   <section class="hero fade-in">
     <div class="avatar">
-      <img src="assets/headshot.jpg" alt="Kaylee Costello" width="96" height="96" id="headshot">
+      <img src="assets/headshot.png" alt="Kaylee Costello" width="96" height="96" id="headshot">
     </div>
     <h1>Kaylee Costello</h1>
     <p class="tagline">Designing systems that scale, and products that ship.</p>
@@ -53,11 +56,6 @@
       </a>
       <a href="https://github.com/kmcost" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-      <a href="https://lovable.dev/@kcostello" target="_blank" rel="noopener noreferrer" aria-label="Lovable">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-          <path d="M12 20.5s-7.5-4.6-9.8-9.3C.7 7.9 2.3 4.5 5.6 3.7c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2 3.3.8 4.9 4.2 3.4 7.5-2.3 4.7-9.8 9.3-9.8 9.3Z"/>
-        </svg>
       </a>
     </nav>
 
@@ -113,40 +111,29 @@
   <section class="row-section fade-in" aria-labelledby="stack-label">
     <h2 class="row-label" id="stack-label">Stack</h2>
     <div class="row-content stack-grid">
-      <a class="stack-item" href="https://claude.ai" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2647-.1214-.5712-.1214-.5348-.7042.0546-.3521.4802-.3218.6864.0607 1.5178.1032 2.2768.1578 1.6512.0971 2.4467.2549h.3885l.0546-.1578-.1335-.0971-.1032-.0971-2.3496-1.5906-2.5438-1.6817-1.3327-.9718-.7225-.4924-.3642-.4622-.1578-1.0083.6559-.7225.8863.0607.2247.0607.8924.6864 1.9065 1.4753 2.4915 1.8368.3642.3035.1457-.1032.0182-.0729-.164-.2733-1.3569-2.4527-1.4479-2.4952-.6438-1.0327-.17-.6196a2.3891 2.3891 0 0 1-.0851-.5895l.7468-1.0145 4.1372 2.9057.6197.5348 2.5559 1.7789.1518.1518.0607-.0426.0182-.1214-.0668-.1093-.5651-1.0387-1.2113-2.0947-1.2963-2.2222-.5773-1.1055-.0243-.4257.017-.3945.5651-.7742.3218-.104.7772.1032.3278.2854.4864 1.1116 4.7823 10.6072.1396.6743.128.1731.6317.2856.9068.3521.5651.4682.2065.2308.5651-.6743.1153.6317.3946.8925.2551.9414.1517.1913.339-.0243.9718-.1032.4864-1.7911.5227-2.5013.8016-.3945.7285-.6863 1.5966-.0668-.0182-.0243.1275.5045.5227.7043-.6317 1.0508-.4986.6317-.0668-.5591-.3703-1.117-1.5906.1214-.6377.3157-.7407 1.1054-1.2417.6377-.9414 1.4632-2.3618.6864-1.751.5711-1.7275.1943-.5469.9899-.9475.7285-.3399 1.3813-.0079 1.5127.0668.4046.2732.5651 1.5359-.9111 2.079-1.1907 2.1638-1.5541 2.4527-.9414 1.6087-.9718.9718-.3643.7286.0182.121 1.0145 2.3922-.0243.0546-.5227-.0243-.9718-.6377-.7893-.4864-.4066-1.093-.5348-.6864-.194-.5348-.7893-2.1088-.5893-1.6209-.297-.7529-.0668-.0242-.1214.4926.0243.1275.1275.6377.4682 3.4568.1093 1.7911-.0182 2.4224-.3399 1.9186-.4986 1.5299-.3399.5348-.5045.0546-.4864-1.2963-.3399-1.1054-.4622-1.5177-.5227-1.6208-.297-.7043-.0668.0243-.1275.6864-.4682.6621-.3157 1.2599.4864 3.7052-.0546.0242.1093.5651.5045.4926.0182.0729-.2247.667-1.5723 3.5478-1.1054 2.0208-.7286 1.2843-.6135 1.4025-.2551.3521-.0668.1153-.0243.0668-.3763.5591-.5045.2854-.3521-.1032-.0246-.1032-.1093-.9718-.0182-.4986-1.9308 1.3327-.6438.3521-.5348.2551-.5348.4986-.9718.5227-.4986-.2247-.5045-.2854-.6438-.9718-.4682-1.0508-.3399-1.0508-1.5541-3.6295-.0243-.2308-1.6087.9718-.9718.7407-1.5541 1.0387-.5348.4986-1.0327.194-.5591-.0243-.4682-.6316-.194-.9718.1032-1.2842.1275-1.1906.1275-1.6209.6376-1.3084.5591-.5834.4864-.1912.5348.194.2247.5348-.0243.1032Z"/></svg>
-        <span class="stack-label">Claude</span>
+      <a class="stack-item" href="https://claude.com/claude-code" target="_blank" rel="noopener noreferrer">
+        <span class="stack-icon claude" aria-hidden="true"></span>
+        <span class="stack-label">Claude Code</span>
       </a>
       <a class="stack-item" href="https://cursor.com" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.503.131 1.891 5.678a.84.84 0 0 0-.42.726v11.188c0 .3.162.575.42.724l9.609 5.55a1 1 0 0 0 .998 0l9.6-5.55a.84.84 0 0 0 .421-.724V6.404a.84.84 0 0 0-.42-.726L12.5.131a1 1 0 0 0-.997 0Z"/></svg>
+        <span class="stack-icon cursor" aria-hidden="true"></span>
         <span class="stack-label">Cursor</span>
       </a>
-      <a class="stack-item" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.4592a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654 2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>
-        <span class="stack-label">ChatGPT</span>
-      </a>
-      <a class="stack-item" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.96-2.19-.93-3.81-2.55t-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81t-3.81 2.55Q2.49 12 0 12q2.49 0 4.68.93 2.19.96 3.81 2.58t2.55 3.81Z"/></svg>
-        <span class="stack-label">Gemini</span>
-      </a>
-      <a class="stack-item stack-item-text" href="https://wisprflow.ai" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-          <rect x="9" y="2" width="6" height="12" rx="3"/>
-          <path d="M5 11a7 7 0 0 0 14 0"/>
-          <path d="M12 18v4M9 22h6"/>
-        </svg>
-        <span class="stack-label">Wispr Flow</span>
+      <a class="stack-item" href="https://lovable.dev" target="_blank" rel="noopener noreferrer">
+        <span class="stack-icon lovable" aria-hidden="true"></span>
+        <span class="stack-label">Lovable</span>
       </a>
       <a class="stack-item" href="https://figma.com" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.354 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.354-3.019 3.019s1.354 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 9.981c-1.665 0-3.019 1.355-3.019 3.019 0 1.665 1.355 3.019 3.019 3.019h3.117V9.981H8.148zM8.172 24c-2.489 0-4.514-2.014-4.514-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.037 4.539-4.539 4.539h-.025zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.02 3.043 3.02 1.657 0 3.005-1.359 3.005-3.029v-3.01H8.148zm7.704 0c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49 4.49 2.014 4.49 4.49-2.014 4.49-4.49 4.49zm0-7.509c-1.665 0-3.019 1.355-3.019 3.019 0 1.665 1.354 3.019 3.019 3.019s3.019-1.354 3.019-3.019c0-1.665-1.354-3.019-3.019-3.019z"/></svg>
+        <span class="stack-icon figma" aria-hidden="true"></span>
         <span class="stack-label">Figma</span>
       </a>
-      <a class="stack-item stack-item-text" href="https://tokens.studio" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-          <circle cx="8" cy="8" r="5.5"/>
-          <circle cx="16" cy="16" r="5.5"/>
-        </svg>
-        <span class="stack-label">Token Studio</span>
+      <a class="stack-item" href="https://storybook.js.org" target="_blank" rel="noopener noreferrer">
+        <span class="stack-icon storybook" aria-hidden="true"></span>
+        <span class="stack-label">Storybook</span>
+      </a>
+      <a class="stack-item" href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <span class="stack-icon github" aria-hidden="true"></span>
+        <span class="stack-label">GitHub</span>
       </a>
     </div>
   </section>

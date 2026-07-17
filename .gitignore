@@ -1,2 +1,12 @@
 .DS_Store
 node_modules/
+
+# Raw source uploads (originals kept locally, processed versions live in assets/)
+/assets/Claude.png
+/assets/Cursor.png
+/assets/Figma.png
+/assets/Github.png
+/assets/Lovable.png
+/assets/Storybook.webp
+/assets/Storybook.png
+/assets/kayleecostello_img.png
