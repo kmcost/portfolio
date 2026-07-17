@@ -16,15 +16,12 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <a href="#top" class="logo" aria-label="Back to top">
-    <span class="logo-mark" aria-hidden="true">
-      <img class="logo-light" src="assets/kayleecostello_logo_lightmode.svg" alt="">
-      <img class="logo-dark" src="assets/kayleecostello_logo_darkmode.svg" alt="">
-    </span>
-  </a>
+  <span class="logo-mark" aria-hidden="true">
+    <img class="logo-light" src="assets/kayleecostello_logo_lightmode.svg" alt="">
+    <img class="logo-dark" src="assets/kayleecostello_logo_darkmode.svg" alt="">
+  </span>
 
   <div class="header-right">
-    <span class="clock" id="clock" aria-live="off">--:--</span>
     <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
       <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="4"/>
@@ -38,7 +35,6 @@
 </header>
 
 <main id="main">
-  <span id="top"></span>
 
   <section class="hero fade-in">
     <div class="avatar">
@@ -59,7 +55,7 @@
       </a>
     </nav>
 
-    <p class="location">Currently living in Chicago</p>
+    <p class="location">Currently: Chicago <span class="location-sep">|</span> <span class="clock" id="clock" aria-live="off">--:--</span></p>
 
     <div class="button-row">
       <button type="button" class="btn" id="copy-email-btn" data-default-label="hello@kayleecostello.com">
@@ -141,7 +137,7 @@
 
 <footer class="site-footer fade-in">
   <p>© 2026 Kaylee Costello. All rights reserved.</p>
-  <p class="muted">Vibe coded this with Claude Code.</p>
+  <p class="muted">Built in a few hours using Claude Code.</p>
 </footer>
 
 <script src="script.js"></script>

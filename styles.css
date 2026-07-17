@@ -5,6 +5,7 @@
   --accent: #2563EB;
   --border: color-mix(in srgb, var(--text-secondary) 14%, transparent);
   --card-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
+  --work-hover-bg: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 
 :root[data-theme="dark"] {
@@ -12,6 +13,7 @@
   --text: #FFFFFF;
   --text-secondary: #D1D1D1;
   --accent: #90C5FF;
+  --work-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,7 @@
     --text: #FFFFFF;
     --text-secondary: #D1D1D1;
     --accent: #90C5FF;
+    --work-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
   }
 }
 
@@ -88,10 +91,6 @@ button {
   max-width: 640px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem 0;
-}
-
-.logo {
-  display: inline-flex;
 }
 
 .logo-mark {
@@ -269,8 +268,20 @@ main {
 }
 
 .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   color: var(--text-secondary);
   margin: 0 0 1.75rem;
+}
+
+.location-sep {
+  color: var(--border);
+}
+
+.location .clock {
+  color: inherit;
 }
 
 .button-row {
@@ -362,7 +373,7 @@ main {
 }
 
 .work-card:hover {
-  background: var(--card-hover-bg);
+  background: var(--work-hover-bg);
   border-color: var(--accent);
 }
 
