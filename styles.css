@@ -5,7 +5,6 @@
   --accent: #2563EB;
   --border: color-mix(in srgb, var(--text-secondary) 14%, transparent);
   --card-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
-  --work-hover-bg: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 
 :root[data-theme="dark"] {
@@ -13,7 +12,6 @@
   --text: #FFFFFF;
   --text-secondary: #D1D1D1;
   --accent: #90C5FF;
-  --work-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +20,6 @@
     --text: #FFFFFF;
     --text-secondary: #D1D1D1;
     --accent: #90C5FF;
-    --work-hover-bg: color-mix(in srgb, var(--text-secondary) 5%, transparent);
   }
 }
 
@@ -373,31 +370,46 @@ main {
   padding: 1.25rem;
   border: 1px solid var(--border);
   border-radius: 12px;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.work-card:hover {
-  background: var(--work-hover-bg);
-  border-color: var(--accent);
 }
 
 .work-card + .work-card {
   margin-top: 0.75rem;
 }
 
-.work-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
 .work-title {
   font-weight: 600;
+  font-size: inherit;
   color: var(--text);
+  margin: 0 0 0.75rem;
 }
 
-.work-blurb {
+.work-bullets {
   color: var(--text-secondary);
+  margin: 0 0 1.1rem;
+  padding-left: 1.1rem;
+}
+
+.work-bullets li + li {
+  margin-top: 0.3rem;
+}
+
+.work-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent) 85%, var(--text));
+  border-color: color-mix(in srgb, var(--accent) 85%, var(--text));
+  color: var(--bg);
 }
 
 /* Stack */
@@ -456,6 +468,7 @@ main {
 
 .site-footer p {
   margin: 0 0 0.3rem;
+  opacity: 0.5;
 }
 
 .site-footer .muted {
