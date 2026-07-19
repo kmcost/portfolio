@@ -294,11 +294,10 @@ main {
   transform: translate(-50%, 0.5rem);
   font-size: 0.95rem;
   font-weight: 500;
-  background: var(--accent);
+  background: var(--text);
   color: var(--bg);
   padding: 0.85rem 1.5rem;
   border-radius: 999px;
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--text) 20%, transparent);
   opacity: 0;
   z-index: 200;
   transition: opacity 0.25s ease, transform 0.25s ease;
