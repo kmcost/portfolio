@@ -53,33 +53,6 @@
     });
   }
 
-  // Clock — always Chicago time
-  var clockEl = document.getElementById("clock");
-  var formatter = new Intl.DateTimeFormat("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-    timeZone: "America/Chicago",
-  });
-
-  function updateClock() {
-    if (clockEl) {
-      clockEl.textContent = formatter.format(new Date());
-    }
-  }
-
-  function scheduleClockTick() {
-    updateClock();
-    var now = new Date();
-    var msToNextMinute = (60 - now.getSeconds()) * 1000 - now.getMilliseconds();
-    setTimeout(function () {
-      updateClock();
-      setInterval(updateClock, 60000);
-    }, msToNextMinute);
-  }
-
-  scheduleClockTick();
-
   // Copy email
   var copyBtn = document.getElementById("copy-email-btn");
   var toast = document.getElementById("copy-toast");

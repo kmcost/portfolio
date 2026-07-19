@@ -10,3 +10,5 @@ node_modules/
 /assets/Storybook.webp
 /assets/Storybook.png
 /assets/kayleecostello_img.png
+.vercel
+.env*
