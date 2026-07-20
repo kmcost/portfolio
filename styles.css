@@ -482,3 +482,17 @@ main {
     font-size: 1.5rem;
   }
 }
+
+.btn-label-short {
+  display: none;
+}
+
+@media (max-width: 374px) {
+  .btn-label-full {
+    display: none;
+  }
+
+  .btn-label-short {
+    display: inline;
+  }
+}
