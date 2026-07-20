@@ -53,10 +53,15 @@ a {
 
 button {
   font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
   background: none;
   border: none;
   color: inherit;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .skip-link {
@@ -475,11 +480,5 @@ main {
 
   .hero h1 {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 380px) {
-  #copy-email-btn .btn-label {
-    display: none;
   }
 }
